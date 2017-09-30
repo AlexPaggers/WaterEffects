@@ -1,4 +1,4 @@
 sceneSetups:
-- path: D:/SuperHedgehogBall/Assets/_Scenes/Game/LevelOne.unity
+- path: Assets/Scene.unity
   isLoaded: 1
   isActive: 1
