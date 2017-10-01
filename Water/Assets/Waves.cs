@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Waves : MonoBehaviour
 {
-    public float multiplier;
+    public float heightMultiplier, wavelength, waveSpeed;
 
     void Update()
     {
@@ -21,7 +21,7 @@ public class Waves : MonoBehaviour
 
         for (int i = 0; i < verts.Length; i++)
         {
-            verts[i].y = Mathf.Sin(Time.deltaTime * multiplier);
+            verts[i].y = Mathf.Sin((Time.time * waveSpeed) + (i * wavelength)) * heightMultiplier;
         }
 
         mF.mesh.vertices = verts;
