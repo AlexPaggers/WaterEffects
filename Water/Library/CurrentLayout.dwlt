@@ -45,7 +45,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 9
+=======
+  controlID: 44
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +213,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 10
+=======
+  controlID: 45
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +241,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,7 +338,11 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\Alex Pagliarini\Documents\GitHub\WaterEffects\Water
+=======
+  m_LastProjectPath: \\nstu-nas01.uwe.ac.uk\users1$\aj2-pagliarini\Personal\GitHub\WaterEffects\Water
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
@@ -482,7 +494,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 92250000
     m_LastClickedID: 9618
+<<<<<<< HEAD
     m_ExpandedIDs: defbffff00000000
+=======
+    m_ExpandedIDs: e0fbffff00000000
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -537,9 +553,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -2.2647843, y: -26.199745, z: -52.1149}
     speed: 2
     m_Value: {x: -2.2647843, y: -26.199745, z: -52.1149}
+=======
+    m_Target: {x: -53.784164, y: -20.258354, z: -8.169197}
+    speed: 2
+    m_Value: {x: -53.784164, y: -20.258354, z: -8.169197}
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -562,18 +584,24 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.00453356, y: 0.9755112, z: -0.21897379, w: -0.02019662}
     speed: 2
     m_Value: {x: -0.00453356, y: 0.9755112, z: -0.21897379, w: -0.02019662}
-  m_Size:
-    m_Target: 93.223274
+=======
+    m_Target: {x: 0.105532736, y: -0.7603944, z: 0.12778918, w: 0.62795955}
     speed: 2
-    m_Value: 93.223274
+    m_Value: {x: 0.105532736, y: -0.7603944, z: 0.12778918, w: 0.62795955}
+>>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
+  m_Size:
+    m_Target: 87.579
+    speed: 2
+    m_Value: 87.579
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.17711593, y: -0.5862457, z: 0.13325241, w: 0.77922386}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
