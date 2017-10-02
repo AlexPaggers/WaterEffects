@@ -3,14 +3,9 @@ using System.Collections;
 
 public class Waves : MonoBehaviour
 {
-    public float multiplier;
+    public float waveHeight, waveSpeed, wavelength;
 
     void Update()
-    {
-        formWaves();
-    }
-
-    void formWaves()
     {
         MeshFilter mF = GetComponent<MeshFilter>();
         MeshCollider mC = GetComponent<MeshCollider>();
@@ -21,12 +16,11 @@ public class Waves : MonoBehaviour
 
         for (int i = 0; i < verts.Length; i++)
         {
-            verts[i].y = Mathf.Sin(Time.deltaTime * multiplier);
+            verts[i].y = Mathf.Sin((Time.time * waveSpeed) + (i * wavelength)) * waveHeight;
         }
 
         mF.mesh.vertices = verts;
         mF.mesh.RecalculateNormals();
         mF.mesh.RecalculateBounds();
     }
-
 }
