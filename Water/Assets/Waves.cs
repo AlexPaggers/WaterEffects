@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Waves : MonoBehaviour
 {
-<<<<<<< HEAD
-    public float waveHeight, waveSpeed, wavelength;
-=======
-    public float heightMultiplier, wavelength, waveSpeed;
->>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
+
+    public float noiseWavelength;
+    public float noiseWaveSpeed;
+    public float noiseStrength;
+
 
     void Update()
     {
@@ -20,11 +20,11 @@ public class Waves : MonoBehaviour
 
         for (int i = 0; i < verts.Length; i++)
         {
-<<<<<<< HEAD
-            verts[i].y = Mathf.Sin((Time.time * waveSpeed) + (i * wavelength)) * waveHeight;
-=======
-            verts[i].y = Mathf.Sin((Time.time * waveSpeed) + (i * wavelength)) * heightMultiplier;
->>>>>>> 2b314476d60924ebfe7c6c341e8885698bfe85b4
+
+                float pX = (verts[i].x * noiseWavelength) + (Time.time * noiseWaveSpeed);
+                float pZ = (verts[i].z * noiseWavelength) + (Time.time * noiseWaveSpeed);
+                verts[i].y = Mathf.PerlinNoise(pX, pZ) * noiseStrength;
+
         }
 
         mF.mesh.vertices = verts;
