@@ -8,6 +8,7 @@
 		_Displacement("Displacement", Range(0, 1.0)) = 0.3
 		_Metallic("Metallic", Range(0,1)) = 0.0
 		_Tess("Tessellation", Range(1,32)) = 4
+		_GameTime("Game Time", float) = 0
 
 		_ScrollSpeedX("Scroll Speed X", float) = 0
 		_ScrollSpeedY("Scroll Speed Y", float) = 0
@@ -41,6 +42,7 @@
 		half _Metallic;
 		fixed4 _Color;
 		float _noiseWavelength, _noiseStrength, _noiseSpeed;
+		float _GameTime;
 
 		UNITY_INSTANCING_CBUFFER_START(Props)
 
@@ -51,13 +53,12 @@
 
 		void vert(inout appdata_full v)
 		{
-			
 			//Adding Tessellation to Displacement Texture 
 			float d = tex2Dlod(_MainTex, float4(v.texcoord.xy, 0, 0)).r * _Displacement;
 			v.vertex.xyz += v.normal * d;
 
 			//Adding Sin Wave to noise
-			float pX = (v.vertex.x * _noiseWavelength) + (_Time.w * _noiseSpeed);
+			float pX = (v.vertex.x * _noiseWavelength) + (_GameTime * _noiseSpeed);
 			v.vertex.y += sin(pX) * _noiseStrength;
 
 
